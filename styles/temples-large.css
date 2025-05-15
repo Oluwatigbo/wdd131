@@ -1,38 +1,50 @@
 /* Large screen styles for temples page */
 
 @media (min-width: 768px) {
-    /* Navigation tweaks for larger viewport */
+    /* Container adjustments - if you use a container class (optional) */
+    main {
+        margin: 3rem auto;
+        padding: 0 2rem;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    
+    /* Layout for sections inside main */
+    main section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    /* Navigation adjustments */
     nav {
         justify-content: space-around;
-        background-color: transparent !important; /* override mobile bg */
+        background-color: transparent !important;
         padding: 0 !important;
         position: static !important;
         flex-direction: row !important;
         gap: 2rem;
+        display: flex !important; /* override any toggled mobile styles */
     }
 
-    /* Reset nav display for larger screen */
+    /* Ensure nav hidden or nav-open classes don't hide nav on large screens */
     nav.hidden,
     nav.nav-open {
         display: flex !important;
     }
 
-    /* Main grid layout for larger screens */
-    main {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-    }
-
-    /* Increase padding and margins for better spacing */
-    main {
-        margin: 3rem auto;
-        padding: 0 2rem;
-    }
-
-    /* Optionally adjust figure styling */
+    /* Figure hover effect */
     figure {
         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     figure:hover {
@@ -40,13 +52,14 @@
         box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     }
 
-    /* Header adjustments */
+    /* Header styling for larger screens */
     header {
         padding: 1.5rem 3rem;
         text-align: left;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     header h1 {
@@ -54,7 +67,7 @@
         font-size: 2rem;
     }
 
-    /* Hide hamburger button on larger screens */
+    /* Hide hamburger menu on larger screens */
     .hamburger {
         display: none;
     }
