@@ -1,0 +1,11 @@
+@media (max-width: 600px) {
+    body {
+        background-color: #F0F0F0; /* Change background for mobile */
+    }
+}
+
+@media (min-width: 601px) {
+    #weather {
+        font-size: 1.2em; /* Larger font for desktop */
+    }
+}

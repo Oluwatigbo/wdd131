@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="images/hero-small.webp">
+            <source media="(min-width: 601px)" srcset="images/hero-large.webp">
+            <img src="images/hero-large.webp" alt="Hero Image">
+        </picture>
+    </header>
+    
+    <main>
+        <section id="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 923,768 km²</li>
+                <li><strong>Population:</strong> 211 million</li>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Languages:</strong> English (official), Hausa, Yoruba, Igbo</li>
+                <li><strong>Currency:</strong> Nigerian Naira (NGN)</li>
+                <li><strong>Time Zone:</strong> West Africa Time (WAT) UTC+1</li>
+                <li><strong>Calling Code:</strong> +234</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+            </ul>
+        </section>
+
+        <section id="weather">
+            <h2>Weather <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon" /></h2>
+             <p>Condition: <span id="condition">Loading...</span></p>
+             <p>Temperature: <span id="temperature">Loading...</span></p>
+             <p>Wind Speed: <span id="wind-speed">Loading...</span></p>
+             <p>Wind Chill: <span id="wind-chill">Loading...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Oluwatigbo Alao, Nigeria.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+     <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

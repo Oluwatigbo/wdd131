@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #FF0000; /* Example color */
+    --secondary-color: #FFFFFF; /* Example color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+#weather {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
