@@ -1,27 +1,76 @@
 :root {
-    --primary-color: #FF0000; /* Example color */
-    --secondary-color: #FFFFFF; /* Example color */
+    --primary-color: #007B3E; /* Nigerian Green */
+    --secondary-color: #f8f7f3; /* Nigerian White */
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin: 0;
-    padding: 0;
+    padding: 0 1rem;
 }
 
 header {
     text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* ::after pseudo-element - underline below h1 */
+h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.25rem auto 0 auto;
+    border-radius: 2px;
+}
+
+#data {
+    margin-bottom: 2rem;
+}
+
+#data h2 {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+#data ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#data li {
+    margin-bottom: 0.5rem;
 }
 
 #weather {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid var(--primary-color);
+    border-top: 2px solid var(--primary-color);
+    padding-top: 1rem;
 }
 
+#weather h2 {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.weather-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 0.5rem;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
-    margin-top: 20px;
+    padding: 1rem 0;
+    font-size: 0.875rem;
 }

@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore Nigeria, its culture, geography, and current weather conditions." />
+    <meta name="author" content="Your Name" />
     <title>Place Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- Google Fonts embed -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/media-queries.css" />
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Nigeria</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="images/hero-small.webp">
-            <source media="(min-width: 601px)" srcset="images/hero-large.webp">
-            <img src="images/hero-large.webp" alt="Hero Image">
+            <source media="(max-width: 600px)" srcset="images/hero-small.webp" />
+            <source media="(min-width: 601px)" srcset="images/hero-large.webp" />
+            <img src="images/hero-large.webp" alt="Hero Image" />
         </picture>
     </header>
-    
+
     <main>
         <section id="data">
             <h2>Data</h2>
@@ -35,17 +39,17 @@
 
         <section id="weather">
             <h2>Weather <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon" /></h2>
-             <p>Condition: <span id="condition">Loading...</span></p>
-             <p>Temperature: <span id="temperature">Loading...</span></p>
-             <p>Wind Speed: <span id="wind-speed">Loading...</span></p>
-             <p>Wind Chill: <span id="wind-chill">Loading...</span></p>
+            <p>Condition: <span id="condition">Loading...</span></p>
+            <p>Temperature: <span id="temperature">Loading...</span></p>
+            <p>Wind Speed: <span id="wind-speed">Loading...</span></p>
+            <p>Wind Chill: <span id="wind-chill">Loading...</span></p>
         </section>
     </main>
 
-    <footer>
+     <footer>
         <p>&copy; <span id="year"></span> Oluwatigbo Alao, Nigeria.</p>
         <p>Last modified: <span id="last-modified"></span></p>
     </footer>
-     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
