@@ -1,61 +1,60 @@
 const temples = [
     {
-        name: "Salt Lake Temple",
-        location: "Salt Lake City, Utah, USA",
-        dedicated: "1893",
-        area: 253000,
-        image: "https://example.com/images/salt-lake-temple.webp"
+        templeName: "Aba Nigeria",
+        location: "Aba, Nigeria",
+        dedicated: "2005, August, 7",
+        area: 11500,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
     },
     {
-        name: "Los Angeles California Temple",
-        location: "Los Angeles, California, USA",
-        dedicated: "2000",
-        area: 191000,
-        image: "https://example.com/images/los-angeles-temple.webp"
+        templeName: "Manti Utah",
+        location: "Manti, Utah, United States",
+        dedicated: "1888, May, 21",
+        area: 74792,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
     },
     {
-        name: "Washington D.C. Temple",
-        location: "Washington D.C., USA",
-        dedicated: "1974",
-        area: 160000,
-        image: "https://example.com/images/washington-dc-temple.webp"
+        templeName: "Payson Utah",
+        location: "Payson, Utah, United States",
+        dedicated: "2015, June, 7",
+        area: 96630,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
-        name: "Palmyra New York Temple",
-        location: "Palmyra, New York, USA",
-        dedicated: "2000",
-        area: 30000,
-        image: "https://example.com/images/palmyra-temple.webp"
+        templeName: "Yigo Guam",
+        location: "Yigo, Guam",
+        dedicated: "2020, May, 2",
+        area: 6861,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
     },
     {
-        name: "Provo City Center Temple",
-        location: "Provo, Utah, USA",
-        dedicated: "2016",
-        area: 110000,
-        image: "https://example.com/images/provo-city-center-temple.webp"
-    },
-    // Add three more temple objects
-    {
-        name: "Oklahoma City Oklahoma Temple",
-        location: "Oklahoma City, Oklahoma, USA",
-        dedicated: "2000",
-        area: 50000,
-        image: "https://example.com/images/oklahoma-city-temple.webp"
+        templeName: "Washington D.C.",
+        location: "Kensington, Maryland, United States",
+        dedicated: "1974, November, 19",
+        area: 156558,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
-        name: "Phoenix Arizona Temple",
-        location: "Phoenix, Arizona, USA",
-        dedicated: "2014",
-        area: 90000,
-        image: "https://example.com/images/phoenix-temple.webp"
+        templeName: "Lima Perú",
+        location: "Lima, Perú",
+        dedicated: "1986, January, 10",
+        area: 9600,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
     },
     {
-        name: "Fort Lauderdale Florida Temple",
-        location: "Fort Lauderdale, Florida, USA",
-        dedicated: "2014",
-        area: 100000,
-        image: "https://example.com/images/fort-lauderdale-temple.webp"
-    }
+        templeName: "Mexico City Mexico",
+        location: "Mexico City, Mexico",
+        dedicated: "1983, December, 2",
+        area: 116642,
+        imageUrl:
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
 ];
 
 function createTempleCard(temple) {
