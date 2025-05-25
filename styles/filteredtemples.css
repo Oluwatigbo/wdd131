@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+#temple-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
