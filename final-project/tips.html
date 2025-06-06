@@ -41,39 +41,99 @@
       color: var(--color-primary);
       outline: none;
     }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: var(--color-bg);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--color-primary);
-      user-select: none;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.75rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav li {
-      font-weight: 600;
-    }
-    nav a.nav-link {
-      font-weight: 600;
-      padding: 0.25rem 0.5rem;
-      border-radius: 0.375rem;
-      transition: background-color var(--transition-speed), color var(--transition-speed);
-    }
+/* Responsive Header and Navigation Styles */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--color-bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav li {
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+nav a.nav-link {
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+nav a.nav-link:hover,
+nav a.nav-link:focus {
+  background-color: var(--color-primary);
+  color: white;
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  header {
+    padding: 0.75rem 1rem;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  /* Make nav horizontally scrollable on small screens */
+  nav {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+}
+
+/* Large screen enhancements */
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+  .logo {
+    font-size: 1.75rem;
+  }
+  nav ul {
+    gap: 2rem;
+  }
+  nav a.nav-link {
+    padding: 0.4rem 0.75rem;
+    font-size: 1.05rem;
+  }
+}
+
+
     nav a.nav-link:hover,
     nav a.nav-link:focus {
       background-color: var(--color-primary);
